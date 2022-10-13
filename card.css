@@ -1,0 +1,28 @@
+div.card {
+  background-image: url("./images/receipt.png");
+  background-size: 500px 500px;
+  width: 500px;
+  height: 500px;
+}
+
+.card-title {
+  color: black;
+}
+
+label {
+  width: 500px;
+  margin-top: 20px;
+}
+
+button {
+  margin-top: 50px;
+}
+
+label#result {
+  margin-right: 50px;
+}
+
+a {
+  width: 60px;
+  margin-left: 400px;
+}
