@@ -1,7 +1,7 @@
-var target = document.querySelector(".btn_open");
-var targetID;
+// var target = document.querySelector(".btn_open");
+// var targetID;
 
-target.addEventListener("click", function () {
-  targetID = this.getAttribute("href");
-  document.querySelector(targetID).style.display = "block";
-});
+// target.addEventListener("click", function () {
+//   targetID = this.getAttribute("href");
+//   document.querySelector(targetID).style.display = "block";
+// });
