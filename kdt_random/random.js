@@ -19,6 +19,8 @@ console.log(lunchList)
 //제어할 요소선택 후 변수에 담기
 let displaySlot = document.querySelector(".menu_slot"); //menu slot
 let elem = document.querySelector(".menu_print > h2"); //menu print
+let inputValue = document.querySelector("#search");
+
 // let distanceTxt = document.querySelector(".main_text> p > span"); //distance
 // let costTxt = document.querySelector("em"); //cost
 
@@ -53,6 +55,9 @@ function lunchIs() {
         console.log(lunckPick);
         elem.innerHTML = lunckPick;
 
+
+
+        inputValue.value = lunckPick;
         //선택된 메뉴의 indexOf를 이용하여 distanceTxt, costTxt 노출
 
 
@@ -88,11 +93,17 @@ function reset() {
     //resetNum으로 reset여부를 구분하기 위해 0 할당
     resetNum = 0;
 
- 
+    inputValue.value="";
 }
 
 
 let randomStop = document.querySelector('.menu_slot');
-let menuPrint = document.querySelector('.menu_print')
+let menuPrint = document.querySelector('.menu_print');
 randomStop.addEventListener('click', lunchIs);
-menuPrint.addEventListener('click', reset)
+menuPrint.addEventListener('click', reset);
+
+
+// 랜덤결과 Searchbar에 자동입력
+// let search = document.querySelector('#search');
+// let result = document.getElementsByClassName('.menu_print').innerText;
+// search.innerText = result;
