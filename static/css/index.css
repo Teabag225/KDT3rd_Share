@@ -52,7 +52,7 @@ header.menu {
   display: flex;
   flex-direction: column;
 }
-
+/* 메인페이지 */
 div.main {
   width: 70vw;
   background-color: white;
