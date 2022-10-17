@@ -1,23 +1,18 @@
 :root {
-    --height-header: 100px;
+  --height-header: 100px;
 }
 
 
 body {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.header {
-    display: flex;
+header {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 20px 10px;
 }
-/* header {
-    background-color: brown;
-    height: var(--height-header);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2rem;
-} */
+
 @font-face {
     font-family: 'Cafe24Ssurround';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
@@ -29,27 +24,14 @@ body {
     display: none;
 }
 
-.list-menu > a {
-    margin-left: 16px;
-} */
-/* @media (max-width: 40rem) {
-    a {
-      display: none;
-    }
-    article {
-      border-radius: 16px;
-    }
-  
-    main {
-      padding: 24px;
-    } 
-  } */
 
   /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 
 
 /* The sidebar menu */
 .sidenav {
+  
+  font-family: 'Cafe24Ssurround';
     height: 100%; /* Full-height: remove this if you want "auto" height */
     width: 30vw;  /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
@@ -59,11 +41,13 @@ body {
     background-color: brown; /* Black */
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 20px;
+    text-align: center;
   }
 img {
+    margin: auto;
     width: 25vw;
     height: 30vh;
-
+    /* align-items: center; */
     
     border-radius: 25vw;
     padding: 6px 8px 6px 16px;
@@ -74,7 +58,7 @@ img {
 
   
   /* The navigation menu links */
-  .sidenav .cat {
+  .sidenav .cat, .dropdown-btn {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
@@ -83,7 +67,7 @@ img {
   }
   
   /* When you mouse over the navigation links, change their color */
-  .sidenav a:hover {
+  .sidenav a:hover, .dropdown-btn:hover {
     color: #f1f1f1;
   }
   
@@ -94,6 +78,22 @@ img {
      /* Same as the width of the sidebar */
     padding: 0px 10px;
     box-shadow: 5px 5px 5px 5px;
+  }
+
+  .active {
+    background-color: brown;
+    color: white;
+  }
+
+  .dropdown-container {
+    display: none;
+    background-color: rgb(181, 66, 66);
+    padding-left: 8px;
+  }
+
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
   }
   
     
@@ -118,9 +118,13 @@ img {
 
 
 
-@media screen and (max-width: 990px) {
-    .sidenav {flex-direction: row; }
-    .sidenav a  {font-size: 18px;}
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-width: 620px) {
+    /* .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;} */
+    .sidenav, .sidenav .cat, .img {
+      width: 100%;
+    }
   }
   /* header.menu {
   width: 30vw;
