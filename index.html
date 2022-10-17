@@ -11,16 +11,27 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
     /> -->
+    <!-- Bootstrap Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!-- Normalize.css -->
+    <link rel="stylesheet" href="./normalize.css" />
+
     <link rel="stylesheet" href="/static/css/index.css" />
     <link rel="stylesheet" href="/kdt_random/random.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="main-container">
       <header class="menu">
-        메뉴 들어갈 곳
-        <ul>
-          <li>메뉴1</li>
-          <li>메뉴2</li>
+        <h1 class="title_small">점메추</h1>
+        <div class="icon"><i class="bi bi-list"></i></div>
+        <ul class="menu-list d-none">
+          <a href="/index.html" class="menu_ls">Home</a>
+          <a href="#" class="menu_ls">정산하기</a>
+          <a href="#" class="menu_ls">웹 소개</a>
+          <a href="#" class="menu_ls">팀원 소개</a>
         </ul>
       </header>
       <div class="main">
@@ -43,14 +54,10 @@
             <img src="/images/search.svg" />
           </button>
         </form>
-        <div class="msg">
-          <h4>메뉴 랜덤 선택</h4>
-        </div>
         <div class="random">
           <div class="receipt">
             <div class="title_text">
-              <h1>Lunch</h1>
-              <h3>menu pick</h3>
+              <h2>메뉴 랜덤 선택</h2>
             </div>
             <div class="menu_print">
               <h2></h2>
@@ -84,28 +91,26 @@
             </div>
           </div>
         </div>
+        <div class="container">
+          <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+              <li class="nav-item">
+                <a href="/index.html" class="nav-link px-2 text-muted">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link px-2 text-muted">정산하기</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link px-2 text-muted">웹 소개</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link px-2 text-muted">팀원소개</a>
+              </li>
+            </ul>
+            <p class="text text-center text-muted">© 2022 Company, Inc</p>
+          </footer>
+        </div>
       </div>
-      <!-- <div class="container">
-        <footer class="py-3 my-4">
-          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-muted">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-muted">Features</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-muted">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-muted">FAQs</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-muted">About</a>
-            </li>
-          </ul>
-          <p class="text-center text-muted">© 2022 Company, Inc</p>
-        </footer> -->
     </div>
     <script src="./index.js"></script>
     <script src="/kdt_random/random.js"></script>

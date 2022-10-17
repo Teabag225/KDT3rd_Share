@@ -1,16 +1,25 @@
+@font-face {
+  font-family: "Cafe24Ssurround";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 div.card {
-  background-image: url("./images/receipt.png");
-  background-size: 500px 500px;
-  width: 500px;
+  font-family: "Cafe24Ssurround";
+  width: 400px;
   height: 500px;
+  text-align: center;
 }
 
 .card-title {
+  margin-top: 20px;
   color: black;
 }
 
 label {
-  width: 500px;
+  /* width: 500px; */
   margin-top: 20px;
 }
 
@@ -18,11 +27,12 @@ button {
   margin-top: 50px;
 }
 
-label#result {
+/* label#result {
   margin-right: 50px;
-}
+} */
 
+/* 
 a {
   width: 60px;
   margin-left: 400px;
-}
+} */
